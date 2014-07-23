@@ -37,6 +37,9 @@ public class PartitionTest extends AbstractDatabaseAwareTest {
 
     @Test
     public void testTruncateAddAndSelectWithPartitionerHelper() throws Exception {
+        /**
+         * Thanks to partitioner we can easily operate on multiple partitions.
+         */
         // truncate
         for(int i=1; i<=2; i++) {
             dsl.delete(forPartition(i).table(AUTHOR)).execute();
