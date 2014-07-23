@@ -1,1 +1,1 @@
-todo
+Example how to work with tables partitions and jOOQ
